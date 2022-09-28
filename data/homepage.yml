@@ -1,0 +1,28 @@
+# Main Title
+main:
+  header:
+    title : "Folsom Lake Accounting" # Title Text
+    description : "Passionate about helping small businesses." # Title Desc
+    button:
+      text: "Learn More" # Button Text
+      url: "#about" # Button URL
+
+# About
+about:
+  title: "About"
+  desc: "I have a passion for helping small businesses.  If you find yourself in need of help in your accounting department, I would love to help you out.  My goal is to continue to work myself out of a job.  My mission is to set your small business up better than when I started.  I want to help you get to a place where you can replace me.  Whether that be to get your books up to date, help you with COVID credits or another short term project, I want you to no longer need me."
+  image: "assets/img/profile.jpg"
+
+services:
+  card1:
+    title: "Graysx"
+    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    img: "assets/img/bg-masthead.jpg"
+  card2:
+    title: "Graysx"
+    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    img: "assets/img/demo-image-01.jpg"
+  card3:
+    title: "Graysx"
+    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    img: "assets/img/demo-image-02.jpg"

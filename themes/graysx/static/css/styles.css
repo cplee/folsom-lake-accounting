@@ -612,6 +612,12 @@ progress {
   height: auto;
 }
 
+.about-img{
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -11604,7 +11610,7 @@ body {
     letter-spacing: 0.8rem;
   }
   .masthead h2, .masthead .h2 {
-    max-width: 30rem;
+    max-width: 40rem;
     font-size: 1.25rem;
   }
 }
@@ -11617,27 +11623,27 @@ body {
   margin-bottom: 5rem;
 }
 
-.projects-section {
+.services-section {
   padding: 10rem 0;
 }
-.projects-section .featured-text {
+.services-section .featured-text {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .services-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
-.projects-section .project-text {
+.services-section .service-text {
   padding: 3rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
-  .projects-section .project-text {
+  .services-section .service-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .services-section .service-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;

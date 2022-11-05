@@ -9,7 +9,8 @@ logo = "assets/img/logo.webp"
 favicon = "assets/favicon.png"
 
 # Info
-address = "25005 Blue Ravine Road Ste. 110-193"
+address1 = "25005 Blue Ravine Road Ste. 110-193"
+address2 = "Folsom, CA 95630"
 email = "karen@folsomlakeaccounting.com"
 phone = "888-345-7533"
 

@@ -2,7 +2,7 @@
 main:
   header:
     title : "Folsom Lake Accounting" # Title Text
-    description : "Passionate about helping small businesses." # Title Desc
+    description : "Passionate about taking the stress out of accounting." # Title Desc
     button:
       text: "Learn More" # Button Text
       url: "#about" # Button URL
@@ -10,7 +10,11 @@ main:
 # About
 about:
   title: "About"
-  desc: "I have a passion for helping small businesses.  If you find yourself in need of help in your accounting department, I would love to help you out.  My goal is to continue to work myself out of a job.  My mission is to set your small business up better than when I started.  I want to help you get to a place where you can replace me.  Whether that be to get your books up to date, help you with COVID credits or another short term project, I want you to no longer need me."
+  desc: |
+    My passion is helping others. For small businesses, accounting can be stressful and confusing.  
+    For individuals, communication with the IRS and FTB can be intimidating.  
+    I find joy helping small business and individuals navigate accounting challenges without stress. 
+    Whether you are a small business owner or an individual needing accounting services, I would love to help.
   image: "assets/img/profile.jpg"
 
 services:

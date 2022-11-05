@@ -19,14 +19,24 @@ about:
 
 services:
   card1:
-    title: "Graysx"
-    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
-    img: "assets/img/bg-masthead.jpg"
+    title: "Small Business COVID Credits"
+    text: |
+      A significant number of businesses are eligible for Employee Retention Credits and 
+      have not yet claimed them.  The credits are there to help small businesses that were impacted by COVID.  
+      I can help you determine if you are eligible and if you are, help you claim them.
+    img: "assets/img/folsom-lake-lupine.jpg"
   card2:
-    title: "Graysx"
-    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    title: "Special Projects"
+    text: |
+      .
     img: "assets/img/demo-image-01.jpg"
   card3:
-    title: "Graysx"
-    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    title: "Bookkeeping"
+    text: |
+      .
+    img: "assets/img/demo-image-02.jpg"
+  card4:
+    title: "IRS/FTB Notice Response"
+    text: |
+      .
     img: "assets/img/demo-image-02.jpg"

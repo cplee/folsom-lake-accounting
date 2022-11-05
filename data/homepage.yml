@@ -2,7 +2,7 @@
 main:
   header:
     title : "Folsom Lake Accounting" # Title Text
-    description : "Passionate about taking the stress out of accounting." # Title Desc
+    description : "Taking the stress out of accounting." # Title Desc
     button:
       text: "Learn More" # Button Text
       url: "#about" # Button URL

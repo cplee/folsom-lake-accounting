@@ -10,7 +10,7 @@
                     <div class="text-center">
                         {{ with site.Data.homepage.main }}
                         <h1 class="mx-auto my-0 text-uppercase">{{ .header.title }}</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ .header.description }}</h2>
+                        <h2 class="text-white mx-auto mt-2 mb-5">{{ .header.description }}</h2>
                         <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
                         {{ end }}
                     </div>
@@ -44,7 +44,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>{{ .card1.title }}</h4>
-                            <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                            <p class="text-black-50 mb-0 pre-left">{{ .card1.text }}</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                             <div class="d-flex h-100">
                                 <div class="service-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">{{ .card2.title }}</h4>
-                                    <p class="mb-0 text-white-50">{{ .card2.text }}</p>
+                                    <p class="mb-0 text-white-50 pre-left">{{ .card2.text }}</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                             <div class="d-flex h-100">
                                 <div class="service-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">{{ .card3.title }}</h4>
-                                    <p class="mb-0 text-white-50">{{ .card3.text }}</p>
+                                    <p class="mb-0 text-white-50 pre-left">{{ .card3.text }}</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                             <div class="d-flex h-100">
                                 <div class="service-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">{{ .card4.title }}</h4>
-                                    <p class="mb-0 text-white-50">{{ .card4.text }}</p>
+                                    <p class="mb-0 text-white-50 pre-left">{{ .card4.text }}</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>

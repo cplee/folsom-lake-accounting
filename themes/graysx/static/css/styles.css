@@ -4067,7 +4067,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #64a19d;
+  color: #fff;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4106,7 +4106,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #fff;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -7546,6 +7546,11 @@ textarea.form-control-lg {
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+.pre-left {
+  margin-bottom: 0 !important;
+  white-space: pre-wrap;
+  text-align: left;
 }
 
 .mb-1 {
@@ -11525,7 +11530,7 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -11636,8 +11641,8 @@ body {
   }
 }
 .services-section .service-text {
-  padding: 3rem;
-  font-size: 90%;
+  padding: 1rem;
+  font-size: 100%;
 }
 @media (min-width: 992px) {
   .services-section .service-text {

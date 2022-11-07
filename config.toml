@@ -2,6 +2,7 @@ baseURL = 'https://folsomlakeaccounting.com/'
 languageCode = 'en-us'
 theme = 'graysx'
 title = 'Folsom Lake Accounting'
+enableRobotsTXT = true
 
 ## Site Settings
 [params]

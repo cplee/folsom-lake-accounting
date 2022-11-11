@@ -8,8 +8,8 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">{{ .Site.Title }}</h1>
                         {{ with site.Data.homepage.main }}
-                        <h1 class="mx-auto my-0 text-uppercase">{{ .header.title }}</h1>
                         <h2 class="text-white mx-auto mt-2 mb-5">{{ .header.description }}</h2>
                         <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
                         {{ end }}

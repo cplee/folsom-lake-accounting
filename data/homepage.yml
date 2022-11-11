@@ -1,7 +1,7 @@
 # Main Title
 main:
   header:
-    title : "Folsom Lake Accounting" # Title Text
+    title : "Folsom Lake Accounting - Bookkeeping and accounting services for small businesses and individuals. Expertise in employee retention credit (ERC). Certified Public Accountant (CPA)" # Title Text
     description : "Taking the stress out of accounting." # Title Desc
     button:
       text: "Learn More" # Button Text
@@ -21,7 +21,7 @@ services:
   card1:
     title: "Small Business COVID Credits"
     text: >
-      A significant number of businesses are eligible for Employee Retention Credits and 
+      A significant number of businesses are eligible for Employee Retention Credits (ERC) and 
       have not yet claimed them.  The credits are there to help small businesses that were impacted by COVID.  
       I can help you determine if you are eligible and if you are, help you claim them.
     img: "assets/img/folsom-lake-lupine.jpg"

@@ -26,7 +26,7 @@ services:
       I can help you determine if you are eligible and if you are, help you claim them.
     img: "assets/img/folsom-lake-lupine.jpg"
   card2:
-    title: "Special Projects"
+    title: "Consulting & Advisory Services"
     text: |
       I can help your small business with short term special projects such as:
 

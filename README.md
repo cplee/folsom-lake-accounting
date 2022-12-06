@@ -1,1 +1,5 @@
-# folsom-lake-accounting
+# Local Development
+
+```bash
+hugo server -D
+```

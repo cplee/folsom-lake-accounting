@@ -11634,6 +11634,14 @@ body {
 .services-section .featured-text {
   padding: 2rem;
 }
+.services-section ul {
+  padding: 5px;
+
+}
+.services-section li {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
 @media (min-width: 992px) {
   .services-section .featured-text {
     padding: 0 0 0 2rem;

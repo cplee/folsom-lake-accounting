@@ -27,15 +27,17 @@ services:
     img: "assets/img/folsom-lake-lupine.jpg"
   card2:
     title: "Consulting & Advisory Services"
-    text: |
+    text: >
       I can help your small business with short term special projects such as:
-
-      * Sales tax returns, monthly, quarterly, or annually
-      * QuickBooks configuration, training, and/or migration
-      * Expense management processes and integrations
-      * Implementation of third party payroll services  
-      * Business forecasts, projections and budgets
-      * Interim bookkeeping and help hiring a replacement
+      <ul>
+        <li>Sales tax returns, monthly, quarterly, or annually</li>
+        <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/paying-yourself#7">Reasonable compensation</a> analysis
+        <li>QuickBooks configuration, training, and/or migration</li>
+        <li>Expense management processes and integrations</li>
+        <li>Implementation of third party payroll services</li>
+        <li>Business forecasts, projections and budgets</li>
+        <li>Bookkeeping cleanup and maintenance</li>
+      </ul>
     img: "assets/img/folsom-lake-sunset.jpg"
   card3:
     title: "Bookkeeping"

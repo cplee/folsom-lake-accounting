@@ -19,37 +19,27 @@ about:
 
 services:
   card1:
-    title: "Small Business COVID Credits"
+    title: "Comprehensive Accounting Services"
     text: >
-      A significant number of businesses are eligible for Employee Retention Credits (ERC) and 
-      have not yet claimed them.  The credits are there to help small businesses that were impacted by COVID.  
-      I can help you determine if you are eligible and if you are, help you claim them.
+      I offer comprehensive accounting services tailored to your business needs, including:
+      <br/><br/><b>1.) Monthly Bookkeeping:</b> I'll ensure your financial records are up-to-date by recording your transactions and reconciling your accounts on a monthly basis.
+      <br/><b>2.) Tax Planning:</b> I'll work with you throughout the year to make informed decisions and plan for your annual tax return.
+      <br/><b>3.) Annual Tax Return:</b> I'll prepare your annual tax return, ensuring compliance with tax regulations and helping you take advantage of deductions and credits to maximize your tax savings.
+      <br/><br/>With my accounting and tax services, you can focus on growing your business while I handle the financial intricacies.
     img: "assets/img/folsom-lake-lupine.jpg"
   card2:
-    title: "Consulting & Advisory Services"
+    title: "Estate & Trust Accounting"
     text: >
-      I can help your small business with short term special projects such as:
-      <ul>
-        <li>Sales tax returns, monthly, quarterly, or annually</li>
-        <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/paying-yourself#7">Reasonable compensation</a> analysis
-        <li>QuickBooks configuration, training, and/or migration</li>
-        <li>Expense management processes and integrations</li>
-        <li>Implementation of third party payroll services</li>
-        <li>Business forecasts, projections and budgets</li>
-        <li>Bookkeeping cleanup and maintenance</li>
-      </ul>
+      I offer estate, trust, and probate accounting services.
+      As a CPA with specialized expertise in estate and trust accounting, I provide meticulous financial management and 
+      reporting. Partner with me to ensure seamless financial administration, compliance, 
+      and accurate record-keeping. 
+      Your financial peace of mind is my priority.
     img: "assets/img/folsom-lake-sunset.jpg"
   card3:
-    title: "Bookkeeping"
-    text: > 
-      Many small businesses and non-profits find themselves struggling to keep up with 
-      their monthly bookkeeping needs. I can help keep your accounting records up-to-date by
-      recording your transactions and reconciling your accounts.
-    img: "assets/img/folsom-lake-dam.jpg"
-  card4:
-    title: "IRS/FTB Notice Response"
+    title: "Tax Resolution"
     text: >
       It can be intimidating for individuals and small businesses to receive a notice from
       the IRS, FTB, or other tax agency. I can help you research and respond to the notice
       accordingly.
-    img: "assets/img/folsom-lake-ramp.jpg"
+    img: "assets/img/folsom-lake-dam.jpg"

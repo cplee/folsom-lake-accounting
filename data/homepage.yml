@@ -1,7 +1,7 @@
 # Main Title
 main:
   header:
-    title : "Folsom Lake Accounting - Bookkeeping and accounting services for small businesses and individuals. Expertise in employee retention credit (ERC). Certified Public Accountant (CPA)" # Title Text
+    title : "Folsom Lake Accounting - Certified Public Accountant (CPA). Small business tax accounting and advisory services. Federal IRS notice help: CP14, levy, lien. Probate accounting." # Title Text
     description : "Taking the stress out of accounting." # Title Desc
     button:
       text: "Learn More" # Button Text
@@ -19,37 +19,24 @@ about:
 
 services:
   card1:
-    title: "Small Business COVID Credits"
+    title: "Tax Resolution/Relief"
     text: >
-      A significant number of businesses are eligible for Employee Retention Credits (ERC) and 
-      have not yet claimed them.  The credits are there to help small businesses that were impacted by COVID.  
-      I can help you determine if you are eligible and if you are, help you claim them.
+      I help clients resolve their tax problems with compassion and understanding.  I understand the stress of dealing with the IRS,
+      especially if you have received a notice that says you are out of compliance or owe money. </br>
+
+      I will help you understand what the notice means and how to handle it.  Some notices might have been sent in error, others might
+      require a simple call to the IRS or the notice might be more complicated and require prompt attention and a plan. <br/>
+      
+      Folsom Lake Accounting will help you determine what the next steps should be.  If you have received a notice you are unsure how
+      to handle, please contact myself or another CPA who handles tax resolution as soon as possible to make sure you don’t miss
+      an important deadline. 
     img: "assets/img/folsom-lake-lupine.jpg"
   card2:
-    title: "Consulting & Advisory Services"
+    title: "Advisory Services"
     text: >
-      I can help your small business with short term special projects such as:
-      <ul>
-        <li>Sales tax returns, monthly, quarterly, or annually</li>
-        <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/paying-yourself#7">Reasonable compensation</a> analysis
-        <li>QuickBooks configuration, training, and/or migration</li>
-        <li>Expense management processes and integrations</li>
-        <li>Implementation of third party payroll services</li>
-        <li>Business forecasts, projections and budgets</li>
-        <li>Bookkeeping cleanup and maintenance</li>
-      </ul>
+      Folsom Lake Accounting specializes in empowering small businesses through our comprehensive advisory services.
+      We understand the unique challenges that small businesses face, and are committed to providing solutions that go
+      beyond traditional accounting. Folsom Lake Accounting offers full-service solutions for all your accounting needs.
+      From setting up your accounting software, to monthly check-ins, to implementing an annual tax planning approach,
+      Folsom Lake Accounting will be with you every step of the way.
     img: "assets/img/folsom-lake-sunset.jpg"
-  card3:
-    title: "Bookkeeping"
-    text: > 
-      Many small businesses and non-profits find themselves struggling to keep up with 
-      their monthly bookkeeping needs. I can help keep your accounting records up-to-date by
-      recording your transactions and reconciling your accounts.
-    img: "assets/img/folsom-lake-dam.jpg"
-  card4:
-    title: "IRS/FTB Notice Response"
-    text: >
-      It can be intimidating for individuals and small businesses to receive a notice from
-      the IRS, FTB, or other tax agency. I can help you research and respond to the notice
-      accordingly.
-    img: "assets/img/folsom-lake-ramp.jpg"

@@ -1,7 +1,8 @@
 # Main Title
 main:
   header:
-    title : "Folsom Lake Accounting - Certified Public Accountant (CPA). Small business tax accounting and advisory services. Federal IRS notice help. Probate accounting. Bookkeeping." # Title Text
+    title : "Folsom Lake Accounting - Certified Public Accountant (CPA). Small business tax planning, strategy and advisory services. Federal IRS notice help. Probate accounting. Bookkeeping." # Title Text
+    meta: "Certified Public Accountant (CPA). Small business tax planning, strategy, advisory services. Federal IRS notice: CP14, levy, lien. Probate accounting. Bookkeeping." # Search terms
     description : "Taking the stress out of accounting." # Title Desc
     button:
       text: "Learn More" # Button Text

@@ -44,22 +44,32 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>{{ .card1.title }}</h4>
-                            <p class="text-black-50 mb-0 pre-left">{{ .card1.text | safeHTML }}</p>
+                            <p class="text-black-50 mb-0 pre-justify">{{ .card1.text | safeHTML }}</p>
                         </div>
                     </div>
                 </div>
                 <!-- Service One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="row gx-0 mb-5 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="{{ .card2.img }}" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 service">
                             <div class="d-flex h-100">
                                 <div class="service-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">{{ .card2.title }}</h4>
-                                    <p class="mb-0 text-white-50 pre-left">{{ .card2.text | safeHTML  }}</p>
+                                    <p class="mb-0 text-white-50 pre-justify">{{ .card2.text | safeHTML  }}</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Two Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card3.img }}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>{{ .card3.title }}</h4>
+                            <p class="text-black-50 mb-0 pre-justify">{{ .card3.text | safeHTML }}</p>
                         </div>
                     </div>
                 </div>

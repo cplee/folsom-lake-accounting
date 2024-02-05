@@ -7552,6 +7552,11 @@ textarea.form-control-lg {
   white-space: pre-wrap;
   text-align: left;
 }
+.pre-justify {
+  margin-bottom: 0 !important;
+  white-space: pre-wrap;
+  text-align: justify;
+}
 
 .mb-1 {
   margin-bottom: 0.25rem !important;

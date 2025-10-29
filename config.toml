@@ -6,8 +6,8 @@ enableRobotsTXT = true
 
 ## Site Settings
 [params]
-logo = "assets/img/logo.webp"
-favicon = "assets/favicon.png"
+logo = "/assets/img/logo.webp"
+favicon = "/assets/favicon.png"
 
 # Info
 address1 = "25005 Blue Ravine Road Ste. 110-193"
@@ -27,17 +27,17 @@ sbtoken = "TOKEN_HERE"
 [menu]
   [[menu.main]]
   name = "About"
-  URL = "#about"
+  URL = "/about/"
   weight = 1
 
   [[menu.main]]
   name = "Services"
-  URL = "#services"
+  URL = "/#services"
   weight = 2
 
   [[menu.main]]
   name = "Contact"
-  URL = "#contact"
+  URL = "/#contact"
   weight = 3
 
 

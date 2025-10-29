@@ -3,10 +3,11 @@ main:
   header:
     title : "Folsom Lake Accounting - Certified Public Accountant (CPA). Small business tax planning, strategy and advisory services. Federal IRS notice help. Probate accounting. Bookkeeping." # Title Text
     meta: "Certified Public Accountant (CPA). Small business tax planning, strategy, advisory services. Federal IRS notice: CP14, levy, lien. Probate accounting. Bookkeeping." # Search terms
-    description : "Taking the stress out of accounting." # Title Desc
+    tagline: "Solving Tax and Accounting Needs with Compassion" # Hero tagline
+    description : "Expert guidance when you're stuck with a tax notice, proactive planning to lower your tax burden, and year-round accounting support for your business." # Title Desc
     button:
-      text: "Learn More" # Button Text
-      url: "#about" # Button URL
+      text: "Get Started" # Button Text
+      url: "#services" # Button URL
 
 # About
 about:
@@ -16,38 +17,21 @@ about:
     For individuals, communication with the IRS and FTB can be intimidating. 
     I find joy helping small businesses and individuals navigate accounting challenges without stress. 
     Whether you are a small business owner or an individual needing accounting services, I would love to help.
-  image: "assets/img/profile.jpg"
+  image: "/assets/img/profile.jpg"
 
 services:
   card1:
     title: "Tax Planning and Strategy"
     text: >
-      I offer comprehensive tax planning to find available tax strategies to reduce your taxes based on your specific situation.
-      Most people only think of taxes once a year when they are legally required to file their tax return. Unfortunately, your annual
-      tax return is just a reflection of what has already happened in the past year.<br/><br/>
-      Alternatively, tax planning is a proactive year round approach. I look at the bigger picture and offer forward looking tax planning
-      strategies to reduce your taxes. I can help you implement the strategies that are available to you as well as maintain and monitor
-      your compliance throughout the year.<br/><br/>
-      The purpose of tax planning is to lower your overall tax liability. My goal is to help you achieve that when
-      it comes time to file your annual tax return. 
-    img: "assets/img/folsom-lake-lupine.jpg"
+      Don't wait until tax season to think about your taxes. Year-round tax planning for your business helps you reduce your tax burden and stay compliant. I'll identify strategies tailored to your situation, help you implement them, and monitor your progress throughout the year.
+    img: "/assets/img/folsom-lake-lupine.jpg"
   card2:
     title: "Advisory Services"
     text: >
-      Folsom Lake Accounting specializes in empowering small businesses through our comprehensive advisory services.
-      We understand the unique challenges that small businesses face, and are committed to providing solutions that go
-      beyond basic accounting. Folsom Lake Accounting offers full-service solutions for all your accounting needs.
-      From setting up your accounting software, to monthly check-ins, to implementing an annual tax planning approach,
-      we will be with you every step of the way.
-    img: "assets/img/folsom-lake-dam.jpg"
+      Full-service accounting support for small businesses. From setting up your accounting software to monthly check-ins and year-round tax planning, I'm here to help you stay organized and keep your accounting up to date.
+    img: "/assets/img/folsom-lake-dam.jpg"
   card3:
     title: "Tax Resolution/Relief"
     text: >
-      I help clients resolve their tax problems with compassion and understanding. I understand the stress of dealing with the IRS,
-      especially if you have received a notice that says you are out of compliance or owe money. </br><br/>
-      I will help you understand what the notice means and how to handle it. Some notices might have been sent in error, others might
-      require a simple call to the IRS or the notice might be more complicated and require prompt attention and a plan. <br/><br/>
-      Folsom Lake Accounting will help you determine what the next steps should be. If you have received a notice you are unsure how
-      to handle, please contact myself or another CPA who handles tax resolution as soon as possible to make sure you don’t miss
-      an important deadline. 
-    img: "assets/img/folsom-lake-sunset.jpg"
+      Received a tax notice? Don't panic. I'll help you understand what it means and what to do next. Whether it's a simple error or a complex issue, I'll guide you through the resolution process with compassion and clarity.
+    img: "/assets/img/folsom-lake-sunset.jpg"

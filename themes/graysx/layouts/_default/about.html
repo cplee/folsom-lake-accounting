@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+{{- partial "head.html" . -}}
+<body id="page-top">
+{{- partial "header.html" . -}}
+        <!-- About Page Content-->
+        {{ with site.Data.homepage.about }}
+        <section class="about-section text-center" id="about" style="padding-top: 10rem;">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">{{ .title }}</h2>
+                        <p class="justify text-white-50">{{ .desc }}</p>
+                        {{ if .button.enable }}
+                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+                <img class="about-img" src="{{ .image }}" alt="..." />
+            </div>
+        </section>
+        {{ end }}
+        <!-- Contact-->
+        <section class="contact-section bg-black" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">{{ site.Params.address1 }}</div>
+                                <div class="small text-black-50">{{ site.Params.address2 }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">{{ site.Params.phone }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="{{ site.Params.linkedin }}"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+{{- partial "footer.html" . -}}
+</body>
+</html>
+

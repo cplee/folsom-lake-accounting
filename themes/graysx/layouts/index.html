@@ -3,50 +3,58 @@
 {{- partial "head.html" . -}}
 <body id="page-top">
 {{- partial "header.html" . -}}
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
+        <!-- Masthead with Services-->
+        <header class="masthead" style="min-height: 100vh; padding-bottom: 4rem;">
+            <div class="container px-4 px-lg-5">
+                <div class="row d-flex h-100 align-items-center justify-content-center" style="padding-top: 8rem;">
+                    <div class="col-12 text-center mb-5">
                         {{ with site.Data.homepage.main }}
                         <h1 class="mx-auto my-0 hero-tagline" style="letter-spacing: 0.1rem; text-transform: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">{{ .header.tagline }}</h1>
                         <h2 class="text-white mx-auto mt-4 mb-5 hero-description" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">{{ .header.description | safeHTML }}</h2>
-                        <a class="btn btn-primary" href="javascript:;" onclick="TaxMinion('show')">{{ .header.button.text }}</a>
+                        <a class="btn btn-primary mb-5" href="javascript:;" onclick="TaxMinion('show')">{{ .header.button.text }}</a>
                         {{ end }}
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- Services-->
-        {{ with site.Data.homepage.services }}
-        <section class="services-section bg-light" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
+                <!-- Services Cards -->
+                {{ with site.Data.homepage.services }}
+                <div class="row gx-4 gx-lg-5" id="services">
                     <!-- Tax Resolution -->
-                    <div class="col-lg-4 mb-5">
-                        <div class="text-center">
-                            <h4 class="mb-3">{{ .card3.title }}</h4>
-                            <p class="text-black-50 text-start">{{ .card3.text | safeHTML }}</p>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-center mb-3">{{ .card3.title }}</h4>
+                                <p class="card-text">{{ .card3.text | safeHTML }}</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Advisory Services -->
-                    <div class="col-lg-4 mb-5">
-                        <div class="text-center">
-                            <h4 class="mb-3">{{ .card2.title }}</h4>
-                            <p class="text-black-50 text-start">{{ .card2.text | safeHTML }}</p>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-center mb-3">{{ .card2.title }}</h4>
+                                <p class="card-text">{{ .card2.text | safeHTML }}</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Tax Planning -->
-                    <div class="col-lg-4 mb-5">
-                        <div class="text-center">
-                            <h4 class="mb-3">{{ .card1.title }}</h4>
-                            <p class="text-black-50 text-start">{{ .card1.text | safeHTML }}</p>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-center mb-3">{{ .card1.title }}</h4>
+                                <p class="card-text">{{ .card1.text | safeHTML }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                {{ end }}
+            </div>
+        </header>
+        <!-- Reviews Section -->
+        <section class="bg-light py-5" id="reviews">
+            <div class="container px-4 px-lg-5">
                 <div class='sk-ww-google-reviews' data-embed-id='252514'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+            </div>
         </section>
-        {{ end }}
         <!-- Contact-->
         <section class="contact-section bg-black" id="contact">
             <div class="container px-4 px-lg-5">

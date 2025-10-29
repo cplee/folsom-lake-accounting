@@ -1,0 +1,162 @@
+---
+alwaysApply: true
+---
+
+# Deployment
+
+## GitHub Actions Workflows
+
+The project uses GitHub Actions for CI/CD with mise integration.
+
+### Workflow Files
+- `.github/workflows/ci.yml` - Runs on pull requests
+- `.github/workflows/publish.yml` - Deploys to GitHub Pages on main branch
+
+### CI Workflow (Pull Requests)
+Located at `.github/workflows/ci.yml`
+
+**Triggers**: On pull request
+
+**Steps**:
+1. Checkout code
+2. Setup mise (using `jdx/mise-action@v2`)
+3. Build site with `mise run build`
+
+This ensures all PRs can build successfully before merging.
+
+### Publish Workflow (Deployment)
+Located at `.github/workflows/publish.yml`
+
+**Triggers**: 
+- Push to `main` branch
+- Manual workflow dispatch
+
+**Steps**:
+1. Checkout code
+2. Configure GitHub Pages
+3. Setup mise (using `jdx/mise-action@v2`)
+4. Build site with `mise run build`
+5. Upload artifact (from `public/` directory)
+6. Deploy to GitHub Pages
+
+### Mise Integration in CI/CD
+
+Both workflows use the `jdx/mise-action@v2` action which:
+- Automatically installs mise
+- Reads `.mise.toml` configuration
+- Installs Hugo v0.104.1 (as specified in `.mise.toml`)
+- Makes mise tasks available
+
+**Benefits**:
+- Hugo version is centrally managed in `.mise.toml`
+- No need to duplicate version numbers in workflows
+- Consistent tooling between local development and CI/CD
+- Easy to update Hugo version (just change `.mise.toml`)
+
+### Deployment Target
+- **Platform**: GitHub Pages
+- **URL**: Configured in repository settings
+- **Source**: `gh-pages` branch (managed by GitHub Actions)
+
+## Making Changes
+
+### For Content Updates
+1. Create a branch
+2. Make changes locally
+3. Test with `mise run dev`
+4. Push branch and create PR
+5. CI will verify build succeeds
+6. Merge to `main` to deploy
+
+### For Configuration Changes
+1. Update `.mise.toml`, `config.toml`, or workflow files
+2. Test locally first
+3. Follow PR process
+4. Monitor deployment after merge
+
+## Troubleshooting Deployments
+
+If deployment fails:
+1. Check GitHub Actions logs in the repository
+2. Verify `mise run build` works locally
+3. Ensure Hugo version in `.mise.toml` is correct
+4. Check for broken links or missing assets
+# Deployment
+
+## GitHub Actions Workflows
+
+The project uses GitHub Actions for CI/CD with mise integration.
+
+### Workflow Files
+- `.github/workflows/ci.yml` - Runs on pull requests
+- `.github/workflows/publish.yml` - Deploys to GitHub Pages on main branch
+
+### CI Workflow (Pull Requests)
+Located at `.github/workflows/ci.yml`
+
+**Triggers**: On pull request
+
+**Steps**:
+1. Checkout code
+2. Setup mise (using `jdx/mise-action@v2`)
+3. Build site with `mise run build`
+
+This ensures all PRs can build successfully before merging.
+
+### Publish Workflow (Deployment)
+Located at `.github/workflows/publish.yml`
+
+**Triggers**: 
+- Push to `main` branch
+- Manual workflow dispatch
+
+**Steps**:
+1. Checkout code
+2. Configure GitHub Pages
+3. Setup mise (using `jdx/mise-action@v2`)
+4. Build site with `mise run build`
+5. Upload artifact (from `public/` directory)
+6. Deploy to GitHub Pages
+
+### Mise Integration in CI/CD
+
+Both workflows use the `jdx/mise-action@v2` action which:
+- Automatically installs mise
+- Reads `.mise.toml` configuration
+- Installs Hugo v0.104.1 (as specified in `.mise.toml`)
+- Makes mise tasks available
+
+**Benefits**:
+- Hugo version is centrally managed in `.mise.toml`
+- No need to duplicate version numbers in workflows
+- Consistent tooling between local development and CI/CD
+- Easy to update Hugo version (just change `.mise.toml`)
+
+### Deployment Target
+- **Platform**: GitHub Pages
+- **URL**: Configured in repository settings
+- **Source**: `gh-pages` branch (managed by GitHub Actions)
+
+## Making Changes
+
+### For Content Updates
+1. Create a branch
+2. Make changes locally
+3. Test with `mise run dev`
+4. Push branch and create PR
+5. CI will verify build succeeds
+6. Merge to `main` to deploy
+
+### For Configuration Changes
+1. Update `.mise.toml`, `config.toml`, or workflow files
+2. Test locally first
+3. Follow PR process
+4. Monitor deployment after merge
+
+## Troubleshooting Deployments
+
+If deployment fails:
+1. Check GitHub Actions logs in the repository
+2. Verify `mise run build` works locally
+3. Ensure Hugo version in `.mise.toml` is correct
+4. Check for broken links or missing assets

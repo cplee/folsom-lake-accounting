@@ -1,0 +1,78 @@
+---
+alwaysApply: true
+---
+
+# Project Setup
+
+## Overview
+This is a Hugo static site for Folsom Lake Accounting, a CPA practice in Folsom, CA.
+
+## Technology Stack
+- **Static Site Generator**: Hugo v0.104.1
+- **Theme**: graysx (custom theme in themes/graysx)
+- **Tool Management**: mise
+- **Deployment**: GitHub Pages via GitHub Actions
+
+## Mise Configuration
+The project uses mise for tool version management and task execution.
+
+### Installation
+Hugo is managed via mise and specified in `.mise.toml`:
+
+```toml
+[tools]
+hugo = "0.104.1"
+```
+
+To install Hugo:
+```bash
+mise install
+```
+
+### Tool Versions
+- Hugo: 0.104.1 (extended version required for SCSS/SASS support)
+
+## Project Structure
+- `/config.toml` - Hugo configuration
+- `/data/homepage.yml` - Homepage content data
+- `/static/assets/` - Static assets (images, favicon)
+- `/themes/graysx/` - Custom Hugo theme
+- `/.mise.toml` - Mise configuration for tools and tasks
+- `/.github/workflows/` - CI/CD workflows
+# Project Setup
+
+## Overview
+This is a Hugo static site for Folsom Lake Accounting, a CPA practice in Folsom, CA.
+
+## Technology Stack
+- **Static Site Generator**: Hugo v0.104.1
+- **Theme**: graysx (custom theme in themes/graysx)
+- **Tool Management**: mise
+- **Deployment**: GitHub Pages via GitHub Actions
+
+## Mise Configuration
+The project uses mise for tool version management and task execution.
+
+### Installation
+Hugo is managed via mise and specified in `.mise.toml`:
+
+```toml
+[tools]
+hugo = "0.104.1"
+```
+
+To install Hugo:
+```bash
+mise install
+```
+
+### Tool Versions
+- Hugo: 0.104.1 (extended version required for SCSS/SASS support)
+
+## Project Structure
+- `/config.toml` - Hugo configuration
+- `/data/homepage.yml` - Homepage content data
+- `/static/assets/` - Static assets (images, favicon)
+- `/themes/graysx/` - Custom Hugo theme
+- `/.mise.toml` - Mise configuration for tools and tasks
+- `/.github/workflows/` - CI/CD workflows

@@ -1,0 +1,130 @@
+---
+alwaysApply: true
+---
+
+# Development Workflow
+
+## Using Mise for Development
+
+All development tasks are managed through mise. The configuration is in `.mise.toml`.
+
+## Available Tasks
+
+### Start Development Server
+```bash
+mise run dev
+```
+
+This command:
+- Runs `hugo server -D`
+- Starts a local server at http://localhost:1313
+- Enables live reload
+- Includes draft content (`-D` flag)
+- Watches for file changes and automatically rebuilds
+
+### Build for Production
+```bash
+mise run build
+```
+
+This command:
+- Runs `hugo --minify`
+- Builds the site to the `public/` directory
+- Minifies HTML, CSS, and JavaScript
+- Optimizes for production deployment
+
+## Development Best Practices
+
+1. **Always use mise tasks** instead of running Hugo directly to ensure version consistency
+2. **Test locally** with `mise run dev` before pushing changes
+3. **Check build output** with `mise run build` to verify minification works correctly
+4. The development server supports **hot reload** - changes appear instantly in the browser
+
+## File Watching
+Hugo's development server watches:
+- Content files
+- Template files in `/themes/graysx/layouts/`
+- Static assets in `/static/`
+- Data files in `/data/`
+- Configuration in `config.toml`
+
+## Common Development Tasks
+
+### Making Content Changes
+1. Start dev server: `mise run dev`
+2. Edit files in `/data/homepage.yml` or theme templates
+3. Changes appear automatically in browser
+4. Test thoroughly before committing
+
+### Updating Theme
+1. Modify files in `/themes/graysx/`
+2. Changes are reflected immediately with dev server running
+3. Test responsiveness and cross-browser compatibility
+
+### Adding Images
+1. Place images in `/static/assets/img/`
+2. Reference in templates or data files
+3. Consider image optimization for web performance
+# Development Workflow
+
+## Using Mise for Development
+
+All development tasks are managed through mise. The configuration is in `.mise.toml`.
+
+## Available Tasks
+
+### Start Development Server
+```bash
+mise run dev
+```
+
+This command:
+- Runs `hugo server -D`
+- Starts a local server at http://localhost:1313
+- Enables live reload
+- Includes draft content (`-D` flag)
+- Watches for file changes and automatically rebuilds
+
+### Build for Production
+```bash
+mise run build
+```
+
+This command:
+- Runs `hugo --minify`
+- Builds the site to the `public/` directory
+- Minifies HTML, CSS, and JavaScript
+- Optimizes for production deployment
+
+## Development Best Practices
+
+1. **Always use mise tasks** instead of running Hugo directly to ensure version consistency
+2. **Test locally** with `mise run dev` before pushing changes
+3. **Check build output** with `mise run build` to verify minification works correctly
+4. The development server supports **hot reload** - changes appear instantly in the browser
+
+## File Watching
+Hugo's development server watches:
+- Content files
+- Template files in `/themes/graysx/layouts/`
+- Static assets in `/static/`
+- Data files in `/data/`
+- Configuration in `config.toml`
+
+## Common Development Tasks
+
+### Making Content Changes
+1. Start dev server: `mise run dev`
+2. Edit files in `/data/homepage.yml` or theme templates
+3. Changes appear automatically in browser
+4. Test thoroughly before committing
+
+### Updating Theme
+1. Modify files in `/themes/graysx/`
+2. Changes are reflected immediately with dev server running
+3. Test responsiveness and cross-browser compatibility
+
+### Adding Images
+1. Place images in `/static/assets/img/`
+2. Reference in templates or data files
+3. Consider image optimization for web performance

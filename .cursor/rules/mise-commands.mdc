@@ -1,0 +1,216 @@
+---
+alwaysApply: true
+---
+
+# Mise Command Reference
+
+## Quick Reference
+
+All commands should be run from the project root directory.
+
+## Tool Management
+
+### Install Tools
+```bash
+mise install
+```
+Installs all tools specified in `.mise.toml` (currently Hugo 0.104.1)
+
+### Check Installed Tools
+```bash
+mise list
+```
+Shows all installed tools and their versions
+
+### Update Tools
+```bash
+mise upgrade
+```
+Upgrades tools to latest versions (respecting version constraints)
+
+## Task Execution
+
+### Run Development Server
+```bash
+mise run dev
+```
+- Starts Hugo development server
+- Available at http://localhost:1313
+- Includes drafts
+- Auto-reload enabled
+
+### Build for Production
+```bash
+mise run build
+```
+- Builds minified site
+- Output to `public/` directory
+- Production-ready
+
+### List Available Tasks
+```bash
+mise tasks
+```
+Shows all configured tasks in `.mise.toml`
+
+## Configuration
+
+### View Current Config
+```bash
+mise config
+```
+Displays current mise configuration
+
+### Show Tool Paths
+```bash
+mise where hugo
+```
+Shows the installation path for Hugo
+
+## Environment
+
+### Activate mise Environment
+```bash
+mise activate zsh  # or bash
+```
+Adds mise shims to PATH (usually done in shell rc file)
+
+### Run Command with mise Environment
+```bash
+mise exec -- hugo version
+```
+Runs a command with mise-managed tools in PATH
+
+## Troubleshooting
+
+### Clear Cache
+```bash
+mise cache clear
+```
+Clears mise's download cache
+
+### Reinstall Hugo
+```bash
+mise uninstall hugo
+mise install hugo
+```
+Removes and reinstalls Hugo
+
+### Verify Hugo Version
+```bash
+mise exec -- hugo version
+```
+Should show Hugo v0.104.1+extended
+
+## Integration Tips
+
+- **Always use `mise run`** for tasks instead of calling `hugo` directly
+- **CI/CD workflows** automatically use mise via `jdx/mise-action@v2`
+- **Local development** requires mise to be installed: `curl https://mise.run | sh`
+- **.mise.toml** is the single source of truth for tool versions
+# Mise Command Reference
+
+## Quick Reference
+
+All commands should be run from the project root directory.
+
+## Tool Management
+
+### Install Tools
+```bash
+mise install
+```
+Installs all tools specified in `.mise.toml` (currently Hugo 0.104.1)
+
+### Check Installed Tools
+```bash
+mise list
+```
+Shows all installed tools and their versions
+
+### Update Tools
+```bash
+mise upgrade
+```
+Upgrades tools to latest versions (respecting version constraints)
+
+## Task Execution
+
+### Run Development Server
+```bash
+mise run dev
+```
+- Starts Hugo development server
+- Available at http://localhost:1313
+- Includes drafts
+- Auto-reload enabled
+
+### Build for Production
+```bash
+mise run build
+```
+- Builds minified site
+- Output to `public/` directory
+- Production-ready
+
+### List Available Tasks
+```bash
+mise tasks
+```
+Shows all configured tasks in `.mise.toml`
+
+## Configuration
+
+### View Current Config
+```bash
+mise config
+```
+Displays current mise configuration
+
+### Show Tool Paths
+```bash
+mise where hugo
+```
+Shows the installation path for Hugo
+
+## Environment
+
+### Activate mise Environment
+```bash
+mise activate zsh  # or bash
+```
+Adds mise shims to PATH (usually done in shell rc file)
+
+### Run Command with mise Environment
+```bash
+mise exec -- hugo version
+```
+Runs a command with mise-managed tools in PATH
+
+## Troubleshooting
+
+### Clear Cache
+```bash
+mise cache clear
+```
+Clears mise's download cache
+
+### Reinstall Hugo
+```bash
+mise uninstall hugo
+mise install hugo
+```
+Removes and reinstalls Hugo
+
+### Verify Hugo Version
+```bash
+mise exec -- hugo version
+```
+Should show Hugo v0.104.1+extended
+
+## Integration Tips
+
+- **Always use `mise run`** for tasks instead of calling `hugo` directly
+- **CI/CD workflows** automatically use mise via `jdx/mise-action@v2`
+- **Local development** requires mise to be installed: `curl https://mise.run | sh`
+- **.mise.toml** is the single source of truth for tool versions

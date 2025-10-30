@@ -19,7 +19,7 @@
                 {{ with site.Data.homepage.services }}
                 <div class="row gx-4 gx-lg-5" id="services">
                     <!-- Tax Resolution -->
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
                             <div class="card-body p-4">
                                 <h4 class="card-title text-center mb-3">{{ .card3.title }}</h4>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <!-- Advisory Services -->
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
                             <div class="card-body p-4">
                                 <h4 class="card-title text-center mb-3">{{ .card2.title }}</h4>
@@ -37,11 +37,20 @@
                         </div>
                     </div>
                     <!-- Tax Planning -->
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
                             <div class="card-body p-4">
                                 <h4 class="card-title text-center mb-3">{{ .card1.title }}</h4>
                                 <p class="card-text">{{ .card1.text | safeHTML }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tax Preparation -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100 shadow-lg" style="background: rgba(255,255,255,0.95);">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-center mb-3">{{ .card4.title }}</h4>
+                                <p class="card-text">{{ .card4.text | safeHTML }}</p>
                             </div>
                         </div>
                     </div>

@@ -35,3 +35,8 @@ services:
     text: >
       Received a tax notice? Don't panic. I'll help you understand what it means and what to do next. Whether it's a simple error or a complex issue, I'll guide you through the resolution process with compassion and clarity.
     img: "/assets/img/folsom-lake-sunset.jpg"
+  card4:
+    title: "Tax Preparation"
+    text: >
+      Professional tax return preparation for advisory and bookkeeping clients, or as part of tax resolution services. I'll ensure your returns are accurate, compliant, and optimized for your situation.
+    img: "/assets/img/folsom-lake-sunset.jpg"

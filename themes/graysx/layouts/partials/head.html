@@ -49,6 +49,44 @@
                 max-width: 750px;
             }
         }
+        
+        /* Responsive navbar styling */
+        .navbar-logo {
+            height: 32px;
+        }
+        
+        .navbar-title {
+            margin-left: 0.5rem;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            color: #fff !important;
+        }
+        
+        @media (min-width: 576px) {
+            .navbar-logo {
+                height: 36px;
+            }
+            .navbar-title {
+                margin-left: 0.75rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .navbar-logo {
+                height: 40px;
+            }
+            .navbar-title {
+                margin-left: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Override masthead height to expand with content */
+        .masthead {
+            height: auto !important;
+            min-height: auto !important;
+        }
     </style>
     {{ $title := site.Data.homepage.main.header.title }}
     <title>{{ $title }}</title>

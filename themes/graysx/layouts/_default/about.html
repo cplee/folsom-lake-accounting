@@ -5,18 +5,33 @@
 {{- partial "header.html" . -}}
         <!-- About Page Content-->
         {{ with site.Data.homepage.about }}
-        <section class="about-section text-center" id="about" style="padding-top: 10rem;">
+        <section class="about-section" id="about" style="padding: 8rem 0; background: linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(30,30,50,0.95) 50%, rgba(0,0,0,0.95) 100%);">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">{{ .title }}</h2>
-                        <p class="justify text-white-50">{{ .desc }}</p>
-                        {{ if .button.enable }}
-                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
-                        {{ end }}
+                <div class="row gx-5 align-items-center">
+                    <!-- Profile Image Column -->
+                    <div class="col-lg-5 mb-5 mb-lg-0 text-center">
+                        <div class="about-image-wrapper" style="position: relative; display: inline-block;">
+                            <img src="{{ .image }}" alt="Karen Lee, CPA" 
+                                 style="width: 100%; max-width: 400px; border-radius: 50%; 
+                                        border: 5px solid rgba(100, 181, 246, 0.3);
+                                        box-shadow: 0 20px 60px rgba(0,0,0,0.5), 
+                                                    0 0 40px rgba(100, 181, 246, 0.2);
+                                        transition: transform 0.3s ease;" 
+                                 onmouseover="this.style.transform='scale(1.05)'" 
+                                 onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                    </div>
+                    <!-- Text Content Column -->
+                    <div class="col-lg-7">
+                        <h2 class="text-white mb-3" style="font-size: 2.5rem; font-weight: 700;">{{ .title }}</h2>
+                        <div class="mb-4" style="height: 3px; width: 80px; background: linear-gradient(90deg, #64b5f6, transparent);"></div>
+                        <p class="text-white mb-4" style="font-size: 1.15rem; line-height: 1.8; opacity: 0.95;">{{ .desc }}</p>
+                        <div class="mt-4">
+                            <a class="btn btn-primary btn-lg" href="javascript:;" onclick="TaxMinion('show')" 
+                               style="padding: 12px 40px; font-size: 1.1rem;">Get Started</a>
+                        </div>
                     </div>
                 </div>
-                <img class="about-img" src="{{ .image }}" alt="..." />
             </div>
         </section>
         {{ end }}

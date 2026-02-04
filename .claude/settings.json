@@ -1,14 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mise dev:*)",
-      "Bash(mise build:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:)",
-      "Bash(git status:*)",
-      "Bash(git diff:*)",
-      "Bash(git push:*)",
-      "Bash(gh pr create *)"
+      "Bash(mise:*)",
+      "Bash(git:*)",
+      "Bash(gh:*)"
     ]
   }
 }

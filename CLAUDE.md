@@ -9,11 +9,13 @@ This is a Hugo static site for Folsom Lake Accounting, a CPA business website. T
 ## Commands
 
 **Local development:**
+
 ```bash
 mise run dev
 ```
 
 **Production build:**
+
 ```bash
 mise run build
 ```

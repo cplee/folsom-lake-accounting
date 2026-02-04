@@ -34,11 +34,6 @@ export const about = {
 
 export const services = [
   {
-    title: "Tax Resolution/Relief",
-    text: "Received a tax notice? Don't panic. I'll help you understand what it means and what to do next. Whether it's a simple error or a complex issue, I'll guide you through the resolution process with compassion and clarity.",
-    img: "/assets/img/folsom-lake-sunset.webp",
-  },
-  {
     title: "Advisory Services",
     text: "Full-service accounting support for small businesses. From setting up your accounting software to monthly check-ins and year-round tax planning, I'm here to help you stay organized and keep your accounting up to date.",
     img: "/assets/img/folsom-lake-dam.webp",
@@ -47,6 +42,11 @@ export const services = [
     title: "Tax Planning and Strategy",
     text: "Don't wait until tax season to think about your taxes. Year-round tax planning for your business helps you reduce your tax burden and stay compliant. I'll identify strategies tailored to your situation, help you implement them, and monitor your progress throughout the year.",
     img: "/assets/img/folsom-lake-lupine.webp",
+  },
+  {
+    title: "Tax Resolution/Relief",
+    text: "Received a tax notice? Don't panic. I'll help you understand what it means and what to do next. Whether it's a simple error or a complex issue, I'll guide you through the resolution process with compassion and clarity.",
+    img: "/assets/img/folsom-lake-sunset.webp",
   },
   {
     title: "Tax Preparation",

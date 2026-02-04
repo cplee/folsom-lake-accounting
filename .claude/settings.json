@@ -3,7 +3,13 @@
     "allow": [
       "Bash(mise:*)",
       "Bash(git:*)",
-      "Bash(gh:*)"
+      "Bash(gh:*)",
+      "Bash(vercel:*)",
+      "Bash(open:*)",
+      "Bash(curl:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "mcp__plugin_playwright_playwright__*"
     ]
   }
 }

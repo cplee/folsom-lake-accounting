@@ -1,0 +1,28 @@
+---
+import { siteConfig } from "../data/siteData";
+---
+
+<link
+  href="https://assets.calendly.com/assets/external/widget.css"
+  rel="preload"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+</noscript>
+<script
+  src="https://assets.calendly.com/assets/external/widget.js"
+  type="text/javascript"
+  async></script>
+<script define:vars={{ calendlyUrl: siteConfig.calendlyUrl }}>
+  window.addEventListener("load", function () {
+    Calendly.initBadgeWidget({
+      url: calendlyUrl,
+      text: "\u{1F5D3}\uFE0F Schedule time with me",
+      color: "#0d9488",
+      textColor: "#ffffff",
+      branding: undefined,
+    });
+  });
+</script>

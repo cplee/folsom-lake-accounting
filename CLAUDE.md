@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Hugo static site for Folsom Lake Accounting, a CPA business website. The site uses the Graysx theme (a fork of StartBootstrap Grayscale).
+This is an Astro static site for Folsom Lake Accounting, a CPA business website. Styled with Tailwind CSS, using Inter (body) and Source Serif 4 (headings) fonts.
 
 ## Commands
 
@@ -22,15 +22,20 @@ mise run build
 
 ## Architecture
 
-- **config.toml**: Site configuration including business info (address, phone, email), navigation menu, and theme settings
-- **data/homepage.yml**: All homepage content (hero section, about text, service cards) - this is where most content edits happen
-- **themes/graysx/**: The Graysx Hugo theme
-  - `layouts/index.html`: Main homepage template
-  - `layouts/partials/`: Header, footer, and head partials
-- **static/assets/**: Images and static files
+- **src/data/siteData.ts**: All site content and configuration (business info, hero text, services, nav links)
+- **src/layouts/BaseLayout.astro**: HTML shell with meta tags, fonts, GA4, Calendly widget, Navbar, Footer
+- **src/components/**: Astro components (Navbar, Hero, Services, ServiceCard, Reviews, Contact, AboutHero, Footer, CalendlyWidget)
+- **src/pages/**: Route pages (index.astro, about.astro)
+- **src/styles/global.css**: Tailwind directives and base styles
+- **public/assets/**: Images and static files
+- **tailwind.config.mjs**: Tailwind theme with brand color palette and font families
+
+## Tool Management
+
+All tools (Node, npm, etc.) are managed by [mise](https://mise.jdx.dev/). Always use `mise run` to build, test, and run dev commands — never call `npm` directly. This ensures the correct tool versions are used.
 
 ## Deployment
 
-- CI runs on pull requests (`.github/workflows/ci.yml`) - builds with Hugo to verify no errors
-- Pushes to `main` auto-deploy to Vercel
-- Hugo version: 0.104.1 (extended), managed locally via mise
+- CI runs on pull requests (`.github/workflows/ci.yml`) — `npm ci && npm run build`
+- Pushes to `main` auto-deploy to Vercel (output dir: `dist/`)
+- Node 22, managed locally via mise

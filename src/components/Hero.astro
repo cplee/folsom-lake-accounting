@@ -1,0 +1,42 @@
+---
+import { hero, services, siteConfig } from "../data/siteData";
+---
+
+<section class="relative text-center text-white">
+  <!-- Background image -->
+  <div
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style="background-image: url('/assets/img/bg-masthead.jpg');"
+  >
+  </div>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900/90"></div>
+
+  <div class="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+    <!-- Hero text -->
+    <div class="max-w-3xl mx-auto mb-12">
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6">
+        {hero.tagline}
+      </h1>
+      <p class="text-base sm:text-lg lg:text-xl text-slate-200 leading-relaxed mb-10 max-w-2xl mx-auto">
+        {hero.description}
+      </p>
+      <button
+        data-calendly-url={siteConfig.calendlyUrl}
+        class="calendly-open inline-block rounded-lg bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-brand-700 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-slate-900 cursor-pointer"
+      >
+        {hero.buttonText}
+      </button>
+    </div>
+
+    <!-- Service cards grid -->
+    <div id="services" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {services.map((service) => (
+        <div class="bg-white/95 rounded-lg shadow-lg p-5 text-left">
+          <h3 class="font-serif text-lg font-bold text-slate-900 mb-3 text-center">{service.title}</h3>
+          <p class="text-sm leading-relaxed text-slate-600">{service.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

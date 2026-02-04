@@ -1,5 +1,5 @@
 # Local Development
 
 ```bash
-hugo server -D
+mise run dev
 ```

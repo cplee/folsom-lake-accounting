@@ -1,0 +1,66 @@
+---
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource-variable/source-serif-4";
+import "../styles/global.css";
+import { siteConfig } from "../data/siteData";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CalendlyWidget from "../components/CalendlyWidget.astro";
+
+interface Props {
+  title?: string;
+}
+
+const { title = siteConfig.fullTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={siteConfig.description} />
+    <meta name="author" content={siteConfig.author} />
+    <link rel="icon" href={siteConfig.favicon} />
+    <link rel="canonical" href={siteConfig.url} />
+    <title>{title}</title>
+
+    <!-- Google Analytics -->
+    <script
+      is:inline
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaId}`}
+    ></script>
+    <script is:inline define:vars={{ gaId: siteConfig.gaId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gaId);
+    </script>
+  </head>
+  <body class="bg-white">
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <CalendlyWidget />
+    <script>
+      document.addEventListener("click", (e) => {
+        const btn = (e.target as HTMLElement).closest(".calendly-open");
+        if (btn) {
+          e.preventDefault();
+          const url = btn.getAttribute("data-calendly-url");
+          if (url && typeof Calendly !== "undefined") {
+            Calendly.initPopupWidget({ url });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

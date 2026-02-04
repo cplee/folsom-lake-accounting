@@ -7,6 +7,7 @@ import "../styles/global.css";
 import { siteConfig } from "../data/siteData";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import CalendlyWidget from "../components/CalendlyWidget.astro";
 import TaxMinionWidget from "../components/TaxMinionWidget.astro";
 
 interface Props {
@@ -48,6 +49,19 @@ const { title = siteConfig.fullTitle } = Astro.props;
       <slot />
     </main>
     <Footer />
-    <TaxMinionWidget />
+    <CalendlyWidget />
+    <!-- <TaxMinionWidget /> -->
+    <script>
+      document.addEventListener("click", (e) => {
+        const btn = (e.target as HTMLElement).closest(".calendly-open");
+        if (btn) {
+          e.preventDefault();
+          const url = btn.getAttribute("data-calendly-url");
+          if (url && typeof Calendly !== "undefined") {
+            Calendly.initPopupWidget({ url });
+          }
+        }
+      });
+    </script>
   </body>
 </html>

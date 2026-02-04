@@ -26,7 +26,8 @@ import { about, siteConfig } from "../data/siteData";
         </p>
         <div class="flex items-center gap-4 flex-wrap">
           <button
-            class="taxminion-open inline-block rounded-lg bg-brand-600 px-6 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg hover:bg-brand-700 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-slate-900 cursor-pointer"
+            data-calendly-url={siteConfig.calendlyUrl}
+            class="calendly-open inline-block rounded-lg bg-brand-600 px-6 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg hover:bg-brand-700 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-slate-900 cursor-pointer"
           >
             Get Started
           </button>

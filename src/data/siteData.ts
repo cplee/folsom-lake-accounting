@@ -22,7 +22,7 @@ export const siteConfig = {
 export const hero = {
   tagline: "Solving Tax and Accounting Needs with Compassion",
   description:
-    "Expert guidance when you're stuck with a tax notice, proactive planning to lower your tax burden, and year-round accounting support for your business.",
+    "Accounting support for your business, proactive tax planning, and expert guidance when you're stuck with a tax notice.",
   buttonText: "Get Started",
 };
 

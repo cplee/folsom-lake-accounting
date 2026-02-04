@@ -32,5 +32,5 @@ mise run build
 ## Deployment
 
 - CI runs on pull requests (`.github/workflows/ci.yml`) - builds with Hugo to verify no errors
-- Pushes to `main` auto-deploy to GitHub Pages (`.github/workflows/publish.yml`)
+- Pushes to `main` auto-deploy to Vercel
 - Hugo version: 0.104.1 (extended), managed locally via mise

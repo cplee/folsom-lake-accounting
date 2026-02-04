@@ -7,6 +7,8 @@
       "Bash(vercel:*)",
       "Bash(open:*)",
       "Bash(curl:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
       "mcp__plugin_playwright_playwright__*"
     ]
   }

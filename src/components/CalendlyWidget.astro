@@ -4,8 +4,13 @@ import { siteConfig } from "../data/siteData";
 
 <link
   href="https://assets.calendly.com/assets/external/widget.css"
-  rel="stylesheet"
+  rel="preload"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
 />
+<noscript>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+</noscript>
 <script
   src="https://assets.calendly.com/assets/external/widget.js"
   type="text/javascript"

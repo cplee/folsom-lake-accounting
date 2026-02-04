@@ -14,7 +14,7 @@ import { siteConfig, navLinks } from "../data/siteData";
           alt={siteConfig.title}
           class="h-8 sm:h-9 lg:h-10"
         />
-        <span class="text-sm sm:text-base lg:text-lg font-semibold text-white whitespace-nowrap">
+        <span class="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-white whitespace-nowrap">
           {siteConfig.title}
         </span>
       </a>
@@ -34,7 +34,7 @@ import { siteConfig, navLinks } from "../data/siteData";
       <!-- Mobile hamburger -->
       <button
         id="mobile-menu-btn"
-        class="md:hidden text-slate-300 hover:text-white p-2"
+        class="md:hidden text-slate-300 hover:text-white p-2.5"
         aria-label="Toggle menu"
       >
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -48,7 +48,7 @@ import { siteConfig, navLinks } from "../data/siteData";
       {navLinks.map((link) => (
         <a
           href={link.url}
-          class="block py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+          class="block py-2.5 px-4 text-sm font-medium text-slate-300 hover:text-white transition-colors"
         >
           {link.name}
         </a>

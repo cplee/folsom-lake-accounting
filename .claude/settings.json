@@ -5,7 +5,9 @@
       "Bash(git:*)",
       "Bash(gh:*)",
       "Bash(vercel:*)",
-      "Bash(open \"*-casey-lees-projects.vercel.app\")"
+      "Bash(open:*)",
+      "Bash(curl:*)",
+      "mcp__plugin_playwright_playwright__*"
     ]
   }
 }

@@ -15,4 +15,13 @@
     "logoUrl": "/assets/img/profile.webp",
   });
 </script>
+<script is:inline>
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest(".taxminion-open");
+    if (btn) {
+      e.preventDefault();
+      TaxMinion('show');
+    }
+  });
+</script>
 <!-- end TaxMinion badge widget -->

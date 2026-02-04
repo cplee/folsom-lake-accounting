@@ -8,6 +8,7 @@ import { siteConfig } from "../data/siteData";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import CalendlyWidget from "../components/CalendlyWidget.astro";
+import TaxMinionWidget from "../components/TaxMinionWidget.astro";
 
 interface Props {
   title?: string;
@@ -49,6 +50,7 @@ const { title = siteConfig.fullTitle } = Astro.props;
     </main>
     <Footer />
     <CalendlyWidget />
+    <!-- <TaxMinionWidget /> -->
     <script>
       document.addEventListener("click", (e) => {
         const btn = (e.target as HTMLElement).closest(".calendly-open");

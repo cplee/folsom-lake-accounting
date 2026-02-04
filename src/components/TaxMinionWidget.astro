@@ -1,0 +1,18 @@
+---
+// TaxMinion chat widget
+---
+
+<!-- TaxMinion badge widget -->
+<script is:inline src="https://taxminion.com/widget.js" type="text/javascript" async></script>
+<script is:inline>
+  window.tmTasks = window.tmTasks || [];
+  function TaxMinion(){tmTasks.push(arguments);}
+
+  TaxMinion('init', {
+    "apiKey": "a4bc165f65685e54e3aeb34fdeb091104bae3eb0065db8085123ebf2f2f93268",
+    "serviceBaseUrl": "https://api.taxminion.com",
+    "wsBaseUrl": "https://ws.taxminion.com",
+    "logoUrl": "/assets/img/profile.webp",
+  });
+</script>
+<!-- end TaxMinion badge widget -->

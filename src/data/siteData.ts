@@ -58,5 +58,4 @@ export const services = [
 export const navLinks = [
   { name: "About", url: "/about/" },
   { name: "Services", url: "/#services" },
-  { name: "Contact", url: "/#contact" },
 ];

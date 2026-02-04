@@ -3,7 +3,9 @@
     "allow": [
       "Bash(mise:*)",
       "Bash(git:*)",
-      "Bash(gh:*)"
+      "Bash(gh:*)",
+      "Bash(vercel:*)",
+      "Bash(open \"*-casey-lees-projects.vercel.app\")"
     ]
   }
 }
